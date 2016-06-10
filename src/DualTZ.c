@@ -860,7 +860,6 @@ void handle_deinit(void) {
   app_focus_service_unsubscribe();
   app_message_deregister_callbacks();
   
-  text_layer_destroy(text_TZ2_layer);
   text_layer_destroy(text_time_layer);
   text_layer_destroy(text_time2_layer);
   text_layer_destroy(text_date_layer);
@@ -877,7 +876,7 @@ void handle_deinit(void) {
   fonts_unload_custom_font(fontMonaco13);
   fonts_unload_custom_font(fontRobotoBoldSubset30);
 
-  window_destroy(window);
+  //window_destroy(window);
 }
 
 void handle_init(void) {
