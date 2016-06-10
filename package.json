@@ -1,0 +1,69 @@
+{
+    "author": "WA1OUI",
+    "dependencies": {},
+    "keywords": [],
+    "name": "dualtz",
+    "pebble": {
+        "capabilities": [
+            "location",
+            "configurable"
+        ],
+        "displayName": "Dual Time Zone",
+        "enableMultiJS": true,
+        "messageKeys": {
+            "BT_LOSS_KEY": 5,
+            "DATE_FORMAT_KEY": 4,
+            "LOCAL_BG_COLOR_KEY": 0,
+            "LOCAL_TEXT_COLOR_KEY": 2,
+            "LOCATION_NAME_KEY": 8,
+            "LOW_BATTERY_KEY": 6,
+            "TEMP_FORMAT_KEY": 11,
+            "TZ2_BG_COLOR_KEY": 1,
+            "TZ2_TEXT_COLOR_KEY": 3,
+            "UTC_OFFSET_KEY": 7,
+            "WEATHER_CITY_KEY": 10,
+            "WEATHER_TEMPERATURE_KEY": 9
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/DualtTZ-menu-icon",
+                    "menuIcon": true,
+                    "name": "IMAGE_MENU_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/Roboto-Bold.ttf",
+                    "name": "FONT_ROBOTO_BOLD_SUBSET_30",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Roboto-Bold.ttf",
+                    "name": "FONT_ROBOTO_BOLD_SUBSET_35",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/monaco.ttf",
+                    "name": "FONT_MONACO_13",
+                    "targetPlatforms": null,
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "f6ed6ad4-14f5-4b52-b116-203aface7641",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "2.0.0"
+}
