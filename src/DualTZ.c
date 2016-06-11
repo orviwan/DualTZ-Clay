@@ -69,6 +69,7 @@ static int  PersistBTLoss       = 0;
 static int  PersistLow_Batt     = 0;
 static char PersistUTCOffset[]  = "+00:00";
 static char PersistLocationName[19];
+static char TimeZoneName[32]    = "Not Found";
 
 static bool IsTimeZoneSet; //1 = Set, 0 ->gmtime==localtime
 
@@ -432,9 +433,9 @@ void handle_tick(struct tm *tick_time, TimeUnits units_changed) {
      } 
     
      text_layer_set_text(text_time_layer,  time_text);
-     //APP_LOG(APP_LOG_LEVEL_INFO, "%d seconds adjusted in Handle_tick", intUTCAdjust);
+     APP_LOG(APP_LOG_LEVEL_INFO, "%d seconds adjusted in Handle_tick", intUTCAdjust);
 
-     //APP_LOG(APP_LOG_LEVEL_INFO, "%s = Local Time", time_text);
+     APP_LOG(APP_LOG_LEVEL_INFO, "%s = Local Time", time_text);
        
      //Process GMT for testing purposes
      struct tm* gmtinfo = gmtime(&seconds_since_epoch);
@@ -445,7 +446,7 @@ void handle_tick(struct tm *tick_time, TimeUnits units_changed) {
         strcpy(gmttime_text, time_hold);
      } 
      
-     //APP_LOG(APP_LOG_LEVEL_INFO, "%s = GMT", gmttime_text);
+     APP_LOG(APP_LOG_LEVEL_INFO, "%s = GMT", gmttime_text);
     
     // Adjust for TZ2
      ProcessTimeZone(); //convert from character 12:32 to nunmber of seconds to adjust
@@ -461,10 +462,13 @@ void handle_tick(struct tm *tick_time, TimeUnits units_changed) {
         strcpy(time2_text, time_hold);
      }   
      
-     text_layer_set_text(text_time2_layer, time2_text);  
+     text_layer_set_text(text_time2_layer, time2_text); 
+    
+     clock_get_timezone(TimeZoneName, TIMEZONE_NAME_LENGTH);
 
-     //APP_LOG(APP_LOG_LEVEL_INFO, "%s = TZ2", time2_text);
-     //APP_LOG(APP_LOG_LEVEL_ERROR, "==============================");
+     APP_LOG(APP_LOG_LEVEL_INFO, "%s = TZ2", time2_text);
+     APP_LOG(APP_LOG_LEVEL_INFO, "Timezone Name = %s", TimeZoneName);
+     APP_LOG(APP_LOG_LEVEL_ERROR, "==============================");
      
      strftime(date_text,  sizeof(date_text), date_format, tick_time);
      strftime(date2_text, sizeof(date2_text), date_format, gmtinfo);   
