@@ -371,13 +371,13 @@ void ProcessNoBTPersist() {
        persist_read_string(DATE_FORMAT_KEY, PersistDateFormat, sizeof(PersistDateFormat));
       
        #ifdef PBL_PLATFORM_CHALK
-             if (strcmp(PersistDateFormat, "1") == 0 ) {    // US
+             if (strcmp(PersistDateFormat, "0") == 0 ) {    // US
                strcpy(date_format,   " %a  %D");
              } else {
                strcpy(date_format,   " %a  %d/%m/%y");   //Intl
              }
          #else
-             if (strcmp(PersistDateFormat, "1") == 0 ) { // US
+             if (strcmp(PersistDateFormat, "0") == 0 ) { // US
                  strcpy(date_format, "%a   %D");
              } else {
                  strcpy(date_format, "%a   %d/%m/%y");   //Intl
@@ -1087,7 +1087,7 @@ void handle_init(void) {
 
   IsTimeZoneSet = clock_is_timezone_set();
   
-  APP_LOG(APP_LOG_LEVEL_WARNING, "Time Zone set = %d, 1 = Yes, 0 ->GMTime = localtime", IsTimeZoneSet);
+  //APP_LOG(APP_LOG_LEVEL_WARNING, "Time Zone set = %d, 1 = Yes, 0 ->GMTime = localtime", IsTimeZoneSet);
   
   // Ensures time is displayed immediately (will break if NULL tick event accessed).
   // (This is why it's a good idea to have a separate routine to do the update itself.)

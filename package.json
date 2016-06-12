@@ -2,13 +2,13 @@
     "author": "WA1OUI",
     "dependencies": {},
     "keywords": [],
-    "name": "dualtz",
+    "name": "dualtz-clay",
     "pebble": {
         "capabilities": [
             "location",
             "configurable"
         ],
-        "displayName": "Dual Time Zone",
+        "displayName": "Dual Time Zone-Clay",
         "enableMultiJS": true,
         "messageKeys": {
             "BT_LOSS_KEY": 5,
@@ -65,5 +65,5 @@
             "watchface": true
         }
     },
-    "version": "2.0.0"
+    "version": "3.0.0"
 }

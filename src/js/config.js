@@ -209,6 +209,10 @@ module.exports = [
     "type": "submit",
     "defaultValue": "Save"
     },
+    {
+    "type": "text",
+    "defaultValue": "Dual Time Zone By WA1OUI V3.0",
+          },
       //**************    
       {  
         "type": "section",
