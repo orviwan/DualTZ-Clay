@@ -2,13 +2,13 @@
     "author": "WA1OUI",
     "dependencies": {},
     "keywords": [],
-    "name": "dualtz-clay",
+    "name": "dualtz",
     "pebble": {
         "capabilities": [
             "location",
             "configurable"
         ],
-        "displayName": "Dual Time Zone-Clay",
+        "displayName": "Dual Time Zone",
         "enableMultiJS": true,
         "messageKeys": {
             "BT_LOSS_KEY": 5,
@@ -60,7 +60,7 @@
             "basalt",
             "chalk"
         ],
-        "uuid": "f6ed6ad4-14f5-4b52-b116-203aface7641",
+        "uuid": "41c5fa52-387e-4f67-86a8-142a169c7a0c",
         "watchapp": {
             "watchface": true
         }
