@@ -25,28 +25,28 @@ module.exports = [
         
      {
         "type": "color",
-        "appKey": "LOCAL_BG_COLOR_KEY",
+        "messageKey": "LOCAL_BG_COLOR_KEY",
         "defaultValue": "0000FF",
         "label": "Local Time Background Color",
         "sunlight": false
       },
       {
         "type": "color",
-        "appKey": "TZ2_BG_COLOR_KEY",
+        "messageKey": "TZ2_BG_COLOR_KEY",
         "defaultValue": "005500",
         "label": "Time Zone 2 Background Color",
         "sunlight": false
       },
       {
         "type": "color",
-        "appKey": "LOCAL_TEXT_COLOR_KEY",
+        "messageKey": "LOCAL_TEXT_COLOR_KEY",
         "defaultValue": "FFFFFF",
         "label": "Local Time Text Color",
         "sunlight": false
       },
       {
         "type": "color",
-        "appKey": "TZ2_TEXT_COLOR_KEY",
+        "messageKey": "TZ2_TEXT_COLOR_KEY",
         "defaultValue": "FFFFFF",
         "label": "Time Zone 2 Text Color",
         "sunlight": false
@@ -64,7 +64,7 @@ module.exports = [
       },
       {
         "type": "radiogroup",
-        "appKey": "DATE_FORMAT_KEY",
+        "messageKey": "DATE_FORMAT_KEY",
         "label": "",
         "defaultValue": "0",
         "options": [
@@ -84,7 +84,7 @@ module.exports = [
       },
       {
         "type": "radiogroup",
-        "appKey": "TEMP_FORMAT_KEY",
+        "messageKey": "TEMP_FORMAT_KEY",
         "label": "",
         "defaultValue": "0",
         "options": [
@@ -105,7 +105,7 @@ module.exports = [
       },
       {
         "type": "toggle",
-        "appKey": "BT_LOSS_KEY",
+        "messageKey": "BT_LOSS_KEY",
         "label": "Vibrate on Loss of Bluetooth",
         "defaultValue": false
       },
@@ -121,7 +121,7 @@ module.exports = [
       },
       {
         "type": "toggle",
-        "appKey": "LOW_BATTERY_KEY",
+        "messageKey": "LOW_BATTERY_KEY",
         "label": "Vibrate on Low Battery",
         "defaultValue": false
       },
@@ -137,7 +137,7 @@ module.exports = [
       },
       {
         "type": "input",
-        "appKey": "LOCATION_NAME_KEY",
+        "messageKey": "LOCATION_NAME_KEY",
         "defaultValue": "",
         "label": "LOCATION NAME",
         "description": "",          
@@ -163,7 +163,7 @@ module.exports = [
           },
       { 
         "type": "select",
-         "appKey": "UTC_OFFSET_KEY",
+         "messageKey": "UTC_OFFSET_KEY",
          "defaultValue": "+00:00",
          "label": "",
          "options": [

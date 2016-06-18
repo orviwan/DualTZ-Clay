@@ -1,6 +1,6 @@
 'use strict';
 
-var Clay = require('./clay');
+var Clay = require('pebble-clay');
 var clayConfig = require('./config');
 var clay = new Clay(clayConfig);
 
